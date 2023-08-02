@@ -1,0 +1,91 @@
+/**
+ * @name Discord+
+ * @author PlusInsta
+ * @authorId 309931975102300160
+ * @authorLink https://plusinsta.xyz
+ * @version 3.2.1
+ * @description A sleek, customizable Discord theme.
+ * @donate https://ko-fi.com/plusinsta
+ * @website https://plusinsta.github.io/discord-plus
+ * @source https://github.com/PlusInsta/discord-plus
+ * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
+ * @invite 2Jwh2nS
+*/
+@import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
+
+/* I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server. */
+
+.theme-dark {
+/* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
+   To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
+  --dplus-backdrop: url(https://cdn.discordapp.com/attachments/476584458263199746/1136330090188374167/0674e69a21d4b0918edd3bbbb3558cc1.gif);
+
+/* Accent color, used to decorate the UI with colors. */
+  --dplus-accent-color-hue: 600;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+
+/* Foreground color: For things like text and icons. */
+  --dplus-foreground-color-hue-base: 600;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+
+/* Background color: Covers the backdrop so the app is easier to read. */
+  --dplus-background-color-hue: 600;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 2.5;
+  --dplus-background-color-alpha: 0.8;
+}
+
+/* If you use light theme, you can give it unique settings that are separate from dark theme. */
+.theme-light {
+  --dplus-backdrop: url(https://c4.wallpaperflare.com/wallpaper/90/932/24/astolfo-fate-apocrypha-astolfo-fate-grand-order-fate-apocrypha-fate-series-anime-hd-wallpaper-preview.jpg);
+  
+  --dplus-accent-color-hue: 210;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+  
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
+
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
+}
+
+:root {
+/* Fonts */
+/* You can use any installed font on your device. */
+  --dplus-font-ui: 'Poppins';
+  --dplus-font-body: 'Roboto';
+  --dplus-font-header: 'Righteous';
+
+/* Round corner sizes, measured in pixel radius.
+Set avatar/server radius to 50% to make them circular.
+   UI radius must be in pixels, otherwise things break. */
+  --dplus-radius-ui: 10px;
+  --dplus-radius-avatar: 20%;
+  --dplus-radius-server: 20%;
+
+/* This decides how much breathing room there should be between things like buttons and content. */
+  --dplus-spacing-ui: 10px;
+
+/* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
+   --dplus-spacing-app: 10px;
+
+/* Size of user and server icons */
+--dplus-icon-avatar-chat: 64px;
+--dplus-icon-avatar-list: 32px;
+--dplus-icon-avatar-profile: 80px;
+
+--dplus-icon-server-sidebar: 48px;
+--dplus-icon-server-list: 32px;
+
+/* The Home icon on the top left */
+--dplus-icon-home-dark: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f11cf96-fd46-41f6-9f02-73ad1453347e/dc7aoh9-247319ad-7894-4b71-8230-e19087d0e0e2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhmMTFjZjk2LWZkNDYtNDFmNi05ZjAyLTczYWQxNDUzMzQ3ZVwvZGM3YW9oOS0yNDczMTlhZC03ODk0LTRiNzEtODIzMC1lMTkwODdkMGUwZTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fMUkEhtoWssLsg9PT5tAQhtgBwY2Ip8j1iVuZ3ltv7M);
+--dplus-icon-home-light: url(https://plusinsta.github.io/discord-plus/assets/discord/home_light.svg);
+}
